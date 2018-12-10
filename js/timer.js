@@ -23,7 +23,7 @@ $(document).ready(function() {
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Display the result in the element with id="demo"
-      result = `${days} дней ${hours} часов ${minutes} минут ${seconds} секунд`;
+      result = `${days} дней ${hours} часов <br>${minutes} минут ${seconds} секунд`;
     }
 
     $("#timer").html(result);
