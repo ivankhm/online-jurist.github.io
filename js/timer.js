@@ -17,13 +17,21 @@ $(document).ready(function() {
       result = "ВРЕМЯ ИСТЕКЛО";
     } else {
       // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24)).toString();
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString();
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString();
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000).toString();
+      if (hours.length < 2) {
+        hours = '0' + hours;
+      }
+      if (minutes.length < 2) {
+        minutes = '0' + minutes;
+      }
+      if (seconds.length < 2) {
+        seconds = '0' + seconds;
+      }
       // Display the result in the element with id="demo"
-      result = `${days} дней ${hours} часов <br>${minutes} минут ${seconds} секунд`;
+      result = `${days} дней ${hours}:${minutes}:${seconds}`;
     }
 
     $("#timer").html(result);
