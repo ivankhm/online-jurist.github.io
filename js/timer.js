@@ -31,7 +31,7 @@ $(document).ready(function() {
         seconds = '0' + seconds;
       }
       // Display the result in the element with id="demo"
-      result = `${days} дней ${hours}:${minutes}:${seconds}`;
+      result = `${days} дня ${hours}:${minutes}:${seconds}`;
     }
 
     $("#timer").html(result);
