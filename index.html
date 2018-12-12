@@ -22,7 +22,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
-    <link href="css/cards.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
@@ -30,7 +29,13 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Онлайн Юрист</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <span class="fa-stack fa-xs">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-balance-scale fa-stack-1x fa-inverse"></i>
+          </span>
+          Онлайн Юрист
+        </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Меню
           <i class="fas fa-bars"></i>
@@ -48,6 +53,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#shop">Магазин</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#feedback">Отзывы</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Связь</a>
@@ -73,12 +81,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Новогодняя акция для наших клиентов!</h2>
+            <h2 class="section-heading text-uppercase">Подарки к празднику!</h2>
             <h3 class="section-subheading text-muted">
               Заполнение декларации 3-НДФЛ всего за 400 рублей!<br>
+              Заполнение всех документов,  декларации 3-НДФЛ и онлайн отправка в ФНС за 650 рублей! <br>
               Акция длится до 31 декабря 2018 года.
             </h3>
-            <a class="btn btn-primary btn-xl text-uppercase text-center" data-toggle="modal" href="#checkout">КУПИТЬ</a>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger text-center" href="#shop">Перейти в магазин!</a>
           </div>
         </div>
       </div>
@@ -89,8 +98,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Кто имеет право на налоговый вычет?</h2>
-            <h3 class="section-subheading text-muted">Вы работаете официально по трудовому договору. Работодатель платит за вас НДФЛ - 13 % с вашей зарплаты. Вы можете вернуть уплаченные налоги, если вы: </h3>
+            <h2 class="section-heading text-uppercase">Узнайте о своем праве на вычет</h2>
+            <h3 class="section-subheading text-muted">Вы работаете официально по трудовому договору. Работодатель платит за вас НДФЛ - 13 % с вашей зарплаты. Вы вправе вернуть уплаченные налоги, когда вы: </h3>
           </div>
         </div>
         <div class="row text-center">
@@ -107,7 +116,7 @@
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Оплачиваете обучение</h4>
+            <h4 class="service-heading">Оплачиваете обучение (свое или близких родственников)</h4>
             <p></p>
           </div>
           <div class="col-md-4">
@@ -115,7 +124,7 @@
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-user-md fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Тратитесь на платную медицину</h4>
+            <h4 class="service-heading">Оплачиваете медицинские услуги</h4>
             <p></p>
           </div>
           <div class="col-md-4">
@@ -152,7 +161,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Наша Команда</h2>
-            <h3 class="section-subheading text-muted">Главное наше достояние - это сотрудники. </h3>
+            <h3 class="section-subheading text-muted">Главное наше достояние - это сотрудники.<br>Главная наша ценность – это клиенты. </h3>
           </div>
         </div>
         <div class="row">
@@ -231,7 +240,7 @@
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Юристы компании вникают в ваши жизненные ситуации, проверяют документы и дают консультации, разрешают ваши юридические трудности. Сотрудники помогают вам круглосуточно независимо от часового пояса.</p>
+            <p class="large text-muted">Пока не придумала на что.</p>
           </div>
         </div>
       </div>
@@ -257,6 +266,21 @@
                     </h4>
                     <h5>400 РУБ</h5>
                     <p class="card-text">Заполнение декларации 3-НДФЛ</p>
+
+                  </div>
+                  <a class="btn btn-primary" id="1234" data-toggle="modal" href="#checkout">Купить</a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100" >
+                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      <a href="#">Новогодний Салат</a>
+                    </h4>
+                    <h5>650 РУБ</h5>
+                    <p class="card-text">Заполнение всех документов, декларации 3-НДФЛ и онлайн отправка в ФНС</p>
 
                   </div>
                   <a class="btn btn-primary" id="1234" data-toggle="modal" href="#checkout">Купить</a>
@@ -293,6 +317,76 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Feedback -->
+    <section id="feedback">
+      <div class="container">
+        <h2 class="section-heading text-uppercase text-center">Отзывы наших клиентов!</h2>
+        <div class='row'>
+
+          <div class='col'>
+            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+              <!-- Bottom Carousel Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#quote-carousel" data-slide-to="1"></li>
+                <li data-target="#quote-carousel" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Carousel Slides / Quotes -->
+              <div class="carousel-inner">
+                <!-- Quote 1 -->
+                <div class="carousel-item active">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-3 text-center">
+                        <img class="rounded-circle" src="http://www.reactiongifs.com/r/overbite.gif" style="width: 100px;height:100px;">
+                        <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
+                      </div>
+                      <div class="col-sm-9">
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                        <small>Someone famous</small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- Quote 2 -->
+                <div class="carousel-item">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-3 text-center">
+                        <img class="rounded-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/mijustin/128.jpg" style="width: 100px;height:100px;">
+                      </div>
+                      <div class="col-sm-9">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                        <small>Someone famous</small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- Quote 3 -->
+                <div class="carousel-item">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-3 text-center">
+                        <img class="rounded-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
+                      </div>
+                      <div class="col-sm-9">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                        <small>Someone famous</small>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+
+              <!-- Carousel Buttons Next/Prev -->
+              <a data-slide="prev" href="#quote-carousel" class="carousel-control-prev bg-dark" style="width: 50px;"><i class="fas fa-chevron-left"></i></a>
+              <a data-slide="next" href="#quote-carousel" class="carousel-control-next bg-dark" style="width: 50px;"><i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -492,7 +586,7 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
+    <script src="js/agency.js"></script>
 
     <!-- Timer count down -->
     <script src="js/timer.js"></script>
