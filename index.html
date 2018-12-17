@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.5/css/bootstrap-select.min.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -56,6 +56,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#feedback">Отзывы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#privileges">Льготы</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Связь</a>
@@ -390,6 +393,66 @@
       </div>
     </section>
 
+    <!-- Privileges -->
+    <section id="privileges" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Узнайте о своих льготах</h2>
+            <h3 class="section-subheading text-dark">Воспользуйтесь формой:</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <select class="form-control form-control-lg" id="sex">
+                          <option value="0" selected>Ваш пол</option>
+                          <option value="1">Мужской</option>
+                          <option value="2">Женский</option>
+                        </select>
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <select class="form-control form-control-lg" id="town">
+                          <option value="0" selected>Ваш город</option>
+                          <option value="1">Новосибирск</option>
+                        </select>
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="list-group" id="privileges-group" role="tablist">
+                      <a class="list-group-item active text-light">Выберете город</a>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="tab-content rounded border bg-light" id="privileges-content">Ваши льготы будут отображаться тут</div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger text-center" href="#contact">Узнать подробнее!</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact">
       <div class="container">
@@ -577,6 +640,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.5/js/bootstrap-select.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -590,6 +654,9 @@
 
     <!-- Timer count down -->
     <script src="js/timer.js"></script>
+
+    <!-- Timer count down-->
+    <script src="js/privileges.js"></script>
   </body>
 
 </html>

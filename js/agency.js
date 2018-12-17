@@ -1,6 +1,6 @@
 (function($) {
   "use strict"; // Start of use strict
-
+  $('.selectpicker').selectpicker();
   $('#checkout').on('shown.bs.modal', function () {
     $('#checkout').trigger('focus')
   });

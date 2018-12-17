@@ -1,12 +1,37 @@
 // Styling for the contact section
 section#contact {
-  background-color: $gray-900;
   background-image: url('../img/map-image.png');
-  background-repeat: no-repeat;
-  background-position: center;
   .section-heading {
     color: $white;
   }
+}
+
+section#privileges {
+  background-image: url('../img/privileges-bg.jpg');
+  .section-heading {
+    color: $gray-900;
+  }
+  #privileges-group {
+    height:300px;
+    overflow-y: scroll;
+  }
+  #privileges-content {
+    height: 390px;
+    overflow-y: scroll;
+    padding: 20px;
+  }
+
+  /*
+
+  */
+}
+
+section#contact, #privileges {
+  background-color: $gray-900;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
   .form-group {
     margin-bottom: 25px;
     input,
