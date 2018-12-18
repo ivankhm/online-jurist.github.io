@@ -261,6 +261,8 @@ header.masthead {
       margin-bottom: 30px; }
     .portfolio-modal .modal-content button {
       cursor: pointer; }
+    .portfolio-modal .modal-content .main-checkout {
+      margin-bottom: 15px; }
   .portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
@@ -594,5 +596,7 @@ ul.social-buttons {
     margin: 0px 5px;
     width: 20px;
     height: 20px; } }
+.partner {
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=agency.css.map */
